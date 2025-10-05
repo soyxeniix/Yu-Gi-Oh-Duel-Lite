@@ -2,15 +2,15 @@
 Juan David Gutierrez Florez - 2060104
 Camilo Valencia Romero - 2259497
 
-##🚀 Instrucciones de Ejecución
+🚀 Instrucciones de Ejecución
 
-###📋 Prerrequisitos
+📋 Prerrequisitos
 Verificar que estén instalados Java 17 o superior y Apache Maven.
 Para comprobarlo, ejecutar los siguientes comandos en la terminal o PowerShell:
 bashjava -version
 mvn -version
 
-###⚙️ Pasos para ejecutar el juego
+⚙️ Pasos para ejecutar el juego
 1. 📂 Ubicarse en la carpeta raíz del proyecto
 Por ejemplo:
 bashcd C:\Users\juang\OneDrive\Desktop\ygo-duel-lite
@@ -28,12 +28,12 @@ Las cartas utilizadas desaparecen visualmente del campo después de cada enfrent
 El duelo finaliza cuando uno de los jugadores logra ganar dos rondas.
 
 
-##🏗️ Breve Explicación de Diseño
+🏗️ Breve Explicación de Diseño
 El proyecto está construido con Java 17, empleando Swing para la interfaz gráfica y Maven para la gestión de dependencias. La lógica del duelo se organiza con una clase central Duel, que gestiona las rondas, el puntaje y las reglas de combate, mientras que MainWindow maneja la interfaz visual y las interacciones del jugador. Cada carta es representada por un objeto Card, obtenido dinámicamente desde la API de YGOPRODeck, garantizando variedad en cada partida.
 La comunicación entre la lógica y la interfaz se realiza mediante el patrón Observer, usando la interfaz BattleListener para actualizar la UI (log, resultados y eliminación de cartas) en tiempo real. El diseño modular permite modificar fácilmente las reglas o añadir nuevos modos de juego en el futuro, facilitando la extensibilidad y el mantenimiento del código.
 
 
-## 📸 Capturas del proyecto
+📸 Capturas del proyecto
 
 ![Captura 1](Capturas/Captura%201.png)
 
